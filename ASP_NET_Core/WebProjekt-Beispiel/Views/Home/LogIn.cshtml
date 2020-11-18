@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1 class="log">Erstellen Sie einen Account</h1>
+<form action="/home/checkForm" method="post">
+    <label for="firstname">Vorname:</label>
+    <input type="text" id="firstname" name="firstname" /> <br />
+    <label for="lastname">Nachname:</label>
+    <input type="text" id="lastname" name="lastname"/> <br />
+
+    <label for="gender">Geschlecht</label><br />
+
+    <input type="radio" id="gender" name="gender" value="male" /> männlich<br />
+    <input type="radio" id="gender" name="gender" value="female" /> weiblich<br />
+    <input type="radio" id="gender" name="gender" value="notSpecified" /> nicht angegeben<br /> <br />
+
+
+    <label for="mail">Email</label>
+    <input type="email" id="mail" name="mail" /><br />
+
+    <label for="date">Geburtsdatum</label>
+    <input type="date" id="date" name="date" /><br /> <br />
+
+    <label for="pwd">Passwort</label>
+    <input type="password" id="pwd" name="pwd" /> <br /> <br />
+
+    <input type="submit" value="Absenden" />
+    <input type="reset" value="Löschen" />
+
+</form>
+

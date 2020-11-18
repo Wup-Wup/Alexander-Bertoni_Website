@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebProjekt_Beispiel</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div id="container">
+        <header>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Kingdom_Hearts_wordmark_the_fourth_game_of_the_series.PNG" class="Bild">
+        </header>
+        <main>
+            <nav class="Suche">
+                <partial name="Navigation" />
+            </nav>
+            <content>
+                @* Dort wird die Aktuelle View angezeigt *@
+                @RenderBody()
+            </content>
+        </main>
+        <footer>
+            Fußbereich
+        </footer>
+    </div>
+
+   
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
