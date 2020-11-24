@@ -1,16 +1,34 @@
 ﻿
 
-<a asp-action="index" asp-controller="home" class="Auswahl1">Home</a>
-<a asp-action="aboutUs" asp-controller="home" class="Auswahl1">Games</a>
 
-<div class="dropdown">
-    <span>Enemies</span>
-    <div class="dropdown-content">
 
-        <a asp-action="heartless" asp-controller="enemy">Heartless</a>
-        <a asp-action="nobodies" asp-controller="enemy">Nobodies</a>
-        <a asp-action="unversed" asp-controller="enemy">Unversed</a>
-        <a asp-action="dreameater" asp-controller="enemy">Dream Eater</a>
-    </div>
-</div>
-<a asp-action="logIn" asp-controller="home">LogIn</a>
+<ul id="navibereich">
+    <li id="navi01"><a asp-action="index" asp-controller="home">Home</a></li>
+    <li id="navi02"><a asp-action="aboutUs" asp-controller="home">Games</a></li>
+    <li id="navi03">
+        <div class="dropdown">
+            <span>Enemies</span>
+            <div class="dropdown-content">
+
+                <a asp-action="heartless" asp-controller="enemy">Heartless</a>
+                <a asp-action="nobodies" asp-controller="enemy">Nobodies</a>
+                <a asp-action="unversed" asp-controller="enemy">Unversed</a>
+                <a asp-action="dreameater" asp-controller="enemy">Dream Eater</a>
+            </div>
+        </div>
+    </li>
+    <li id="navi04">
+        <div class="dropdown">
+            <span>Merch</span>
+            <div class="dropdown-content">
+                <a asp-action="merch" asp-controller="shop">Merchlist</a>
+                <a asp-action="createarticle" asp-controller="shop">Create Merch</a>
+            </div>
+        </div>
+    </li>
+    <li id="navi99" style="float:right"><a asp-action="logIn" asp-controller="home" class="Anmelden">Sign in</a></li>
+</ul>
+
+
+
+

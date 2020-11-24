@@ -1,0 +1,41 @@
+﻿@using WebProjekt_Beispiel.Models
+@model List<Merch>
+@{
+    ViewData["Title"] = "Merch";
+}
+
+@if ((Model == null) || (Model.Count == 0))
+{
+    <p>
+        Es ist momentan kein Merch vorhanden
+    </p>
+
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <td colspan="5">Shopartikel</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Artikel-ID</td>
+                <td>Artikelname</td>
+                <td>Erscheinungsdatum</td>
+                <td>Preis</td>
+            </tr>
+            @foreach (Merch a in Model)
+            {
+                <tr>
+                    <td>@a.ArticleId</td>
+                    <td>@a.ArticleName</td>
+                    <td>@a.ReleaseDate</td>
+                    <td>@a.ArticlePrice</td>
+                </tr>
+            }
+        </tbody>
+    </table>  
+}
+

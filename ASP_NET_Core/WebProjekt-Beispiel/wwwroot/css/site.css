@@ -1,34 +1,58 @@
-﻿.Bild{
+﻿.KingdomHearts {
     display: block;
-    margin-left:auto;
-    margin-right:auto;
-    height:100px;
-}
-
-
-.Suche {
-    position: relative;
-    display: inline-block;
-    display: block;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
+    height: 150px;
+}
+
+.Bild {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:250px;
+}
+
+#navibereich li {
+    display: inline;
+    list-style-type: none;
+}
+
+#navibereich {
     background-color: black;
+    color:white;
+    padding: 10px;
+    display: block;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red; 
+}
+
+#navibereich a {
     color: white;
-    height: 50px;
-    padding-top: 12.5px;
+    text-decoration: none;
+    padding: 5px 5px;
 }
 
-.Auswahl1 {
-
-    border-color: white;
-    border-width: 5px;
-    border-style: solid;
-
+#navibereich a:hover {
+    background-color: white;
+    color: black;
 }
+
+#navi02 {
+    padding-left: 50px;
+ 
+}
+
+#navi03 {
+    padding-left: 50px;
+}
+
+#navi04 {
+    padding-left: 50px;
+}
+
 
 .dropdown {
-    position: relative;
+    position:relative;
     display: inline-block;
 }
 
@@ -36,16 +60,33 @@
     display: none;
     position: absolute;
     background-color: black;
-    min-width: 125px;
+    min-width: 150px;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
     padding: 12px 16px;
-    z-index: 1;
+    border: 3px solid red;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.log{
+.Anmelden{
+    border: 3px double red;
+}
+
+.Abstand{
+    padding-left:100px;
+}
+
+.central{
     text-align:center;
+}
+
+tbody td{
+    padding:10px;
+}
+
+.logab{
+    display: block;
+    padding-left:20px;
 }
