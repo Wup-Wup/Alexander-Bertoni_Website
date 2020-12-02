@@ -4,8 +4,9 @@
 
 <ul id="navibereich">
     <li id="navi01"><a asp-action="index" asp-controller="home">Home</a></li>
-    <li id="navi02"><a asp-action="aboutUs" asp-controller="home">Games</a></li>
-    <li id="navi03">
+    <li id="navi02"><a asp-action="user" asp-controller="home">User</a></li>
+    <li id="navi03"><a asp-action="games" asp-controller="home">Games</a></li>
+    <li id="navi04">
         <div class="dropdown">
             <span>Enemies</span>
             <div class="dropdown-content">
@@ -26,7 +27,9 @@
             </div>
         </div>
     </li>
-    <li id="navi99" style="float:right"><a asp-action="logIn" asp-controller="home" class="Anmelden">Sign in</a></li>
+    <li id="navi98" style="float:right"><a asp-action="SignUp" asp-controller="user" class="Erstellen">Sign up</a></li>
+    <li id="navi99" style="float:right"><a asp-action="LogIn" asp-controller="user" class="Anmelden">Log in</a></li>
+
 </ul>
 
 

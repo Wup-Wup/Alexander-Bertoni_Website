@@ -3,5 +3,31 @@
     ViewData["Title"] = "CreateArticle";
 }
 
-<h1>CreateArticle</h1>
+<div class="logab">
 
+    <h1>Create an Article</h1>
+
+    <form action="/home/checkForm" method="post">
+        <label for="articleid">Article ID:</label> <br />
+        <input type="number" id="articleid" name="articleid" /> <br />
+        <br />
+        <label for="articlename">Articlename:</label> <br />
+        <input type="text" id="aname" name="articlename" /> <br />
+        <br />
+        <label for="artilcePrice">Price:</label> <br />
+        <input type="number" id="articleprice" name="articleprice" /> <br />
+        <br />
+        <label for="articleid">Release Date:</label> <br />
+        <input type="date" id="ReleaseDate" name="articlerelease" /> <br />
+        <br />
+
+        <label for="catagory">Catagory:</label><br />
+
+        <input type="radio" id="catagory" name="cata" value="figur" /> Figure<br />
+        <input type="radio" id="catagory" name="cata" value="Statue" /> Statue<br />
+        <input type="radio" id="catagory" name="cata" value="Plush" /> Plush<br />
+        <input type="radio" id="catagory" name="cata" value="Poster" /> Poster<br />
+        <input type="radio" id="catagory" name="cata" value="notSpecified" /> Not Specified<br />
+        <br />
+    </form>
+</div>

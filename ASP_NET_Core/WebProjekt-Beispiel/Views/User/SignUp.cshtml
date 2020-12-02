@@ -1,0 +1,43 @@
+﻿@model WebProjekt_Beispiel.Models.User
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="logins">
+
+    <h1>Create an Account</h1>
+
+    <form asp-controller="user"asp-action="SignUp" method="post">
+        <label asp-for="Firstname"><b>Vorname:</b></label> <br />
+        <input asp-for="Firstname" /> <br />
+        <br />
+
+        <label asp-for="Lastname"><b>Nachname:</b></label><br />
+        <input asp-for="Lastname" /> <br />
+        <br />
+
+        <label asp-for="Email"><b>Email:</b></label> <br />
+        <input asp-for="Email" /> <br />
+        <br />
+
+        <label asp-for="Password"><b>Passwort:</b></label> <br />
+        <input asp-for="Password" type="password"/> <br />
+        <br />
+
+        <label asp-for="PasswordConfirm"><b>Repeat Password:</b></label> <br />
+        <input asp-for="PasswordConfirm" type="password" /> <br />
+        <br />
+
+        <label>
+            <input asp-for="Remember" type="checkbox" style="margin-bottom:15px"> Remember me
+        </label>
+
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+        <button class="CancelButton" type="reset" value="Cancel">Cancel</button>
+        <button class="SignUpButton" type="submit" value="Sign up">Sign Up</button>
+
+    </form>
+</div>

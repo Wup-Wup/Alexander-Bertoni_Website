@@ -13,7 +13,17 @@ namespace WebProjekt_Beispiel.Controllers
             return View();
         }
 
-        public IActionResult AboutUs()
+        public IActionResult Games()
+        {
+            return View();
+        }
+
+        public IActionResult SignUp()
+        {
+            return View();
+        }
+
+        public IActionResult User()
         {
             return View();
         }
