@@ -1,4 +1,4 @@
-﻿
+﻿@model WebProjekt_Beispiel.Models.Merch
 @{
     ViewData["Title"] = "CreateArticle";
 }
@@ -7,27 +7,40 @@
 
     <h1>Create an Article</h1>
 
-    <form action="/home/checkForm" method="post">
-        <label for="articleid">Article ID:</label> <br />
-        <input type="number" id="articleid" name="articleid" /> <br />
-        <br />
-        <label for="articlename">Articlename:</label> <br />
-        <input type="text" id="aname" name="articlename" /> <br />
-        <br />
-        <label for="artilcePrice">Price:</label> <br />
-        <input type="number" id="articleprice" name="articleprice" /> <br />
-        <br />
-        <label for="articleid">Release Date:</label> <br />
-        <input type="date" id="ReleaseDate" name="articlerelease" /> <br />
+    <form asp-controller="shop" asp-action="CreateArticle" method="post">
+
+        <label asp-for="ArticleName">Articlename:</label> <br />
+        <input asp-for="ArticleName" /> <br />
+        <span asp-validation-for="ArticleName" class="test-danger" style="font-size: 85%"></span>
         <br />
 
-        <label for="catagory">Catagory:</label><br />
 
-        <input type="radio" id="catagory" name="cata" value="figur" /> Figure<br />
-        <input type="radio" id="catagory" name="cata" value="Statue" /> Statue<br />
-        <input type="radio" id="catagory" name="cata" value="Plush" /> Plush<br />
-        <input type="radio" id="catagory" name="cata" value="Poster" /> Poster<br />
-        <input type="radio" id="catagory" name="cata" value="notSpecified" /> Not Specified<br />
+        <label asp-for="ArticlePrice">Price:</label> <br />
+        <input asp-for="ArticlePrice" /> <br />
+        <span asp-validation-for="ArticlePrice" class="text-danger" style="font-size: 85%"></span>
         <br />
+
+        <label asp-for="ReleaseDate">Erscheinungsdatum</label><br />
+        <input asp-for="ReleaseDate" type="date" /> <br />
+        <br />
+
+
+        <label asp-for="Category">Kategorie:</label><br />
+        <select asp-for="Category">
+            <option value="notSpecified">bitte auswählen</option>
+            <option value="Figure">Figur</option>
+            <option value="Statue">Statue</option>
+            <option value="Plush">Plush</option>
+            <option value="Poster">Poster</option>
+        </select>
+        <br />
+        <br />
+        <label asp-for="Image">Image:</label> <br />
+        <input asp-for="Image" /> <br />
+        <span asp-validation-for="Image" class="test-danger" style="font-size: 85%"></span>
+        <br />
+        <br />
+        <input type="submit" value="Artikel erzeugen" />
+        <input type="reset" value="Abbrechen" />
     </form>
 </div>

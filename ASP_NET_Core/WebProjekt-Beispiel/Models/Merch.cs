@@ -18,18 +18,20 @@ namespace WebProjekt_Beispiel.Models
         public decimal ArticlePrice { get; set; }
         public DateTime? ReleaseDate { get; set; }
         public Category Category { get; set; }
+        public String Image { get; set; }
 
 
-        public Merch() : this(0, "", 0.0m, null, Category.notSpecified) { }
+        public Merch() : this(0, "", 0.0m, null, Category.notSpecified, "") { }
 
         public Merch(int articleid, string articlename,
-            decimal articleprice, DateTime? releaseDate, Category category)
+            decimal articleprice, DateTime? releaseDate, Category category, String image)
         {
             this.ArticleId = articleid;
             this.ArticleName = articlename;
             this.ArticlePrice = articleprice;
             this.ReleaseDate = releaseDate;
             this.Category = category;
+            this.Image = image;
         }
 
         public override string ToString()

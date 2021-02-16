@@ -25,6 +25,8 @@ else
                 <td>Artikelname</td>
                 <td>Erscheinungsdatum</td>
                 <td>Preis</td>
+                <td>Kategorie</td>
+                <td>Bild</td>
             </tr>
             @foreach (Merch a in Model)
             {
@@ -33,6 +35,18 @@ else
                     <td>@a.ArticleName</td>
                     <td>@a.ReleaseDate</td>
                     <td>@a.ArticlePrice</td>
+                    <td>@a.Category</td>
+                    <td><img src="@a.Image" width="100" height="100"/></td>
+                    <td>
+                        <form action="/shop/delete/@a.ArticleId" method="post">
+                            <input type="submit" value="delete" />
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/shop/update/@a.ArticleId" method="post">
+                            <input type="submit" value="change" />
+                        </form>
+                    </td>
                 </tr>
             }
         </tbody>
