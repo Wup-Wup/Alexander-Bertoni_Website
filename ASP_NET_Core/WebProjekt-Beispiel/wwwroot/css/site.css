@@ -148,3 +148,42 @@ tbody td{
 content{
     height:200vh;
 }
+
+footer {
+    background-image: url('../images/FooterB.jpg');
+}
+
+
+.rechts {
+    float: right;
+    max-width:100px;
+    max-height:500px;
+    margin-right: 100px;
+}
+
+.pure p {
+    line-height:30px;
+}
+
+.emblem p {
+    line-height:30px;
+}
+
+.info .pure{
+    margin-top:20px;
+    margin-bottom:50px;
+}
+
+.heartless{
+    margin-left:50px;
+    margin-right:50px;
+}
+
+.heartless h2{
+    margin-top:25px;
+}
+
+.nobodies {
+    margin-left:50px;
+    margin-right:50px;
+}
