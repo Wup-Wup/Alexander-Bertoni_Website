@@ -1,0 +1,94 @@
+﻿
+header {
+    background-image: url('../images/Backgrounds/HeaderB.png');
+}
+
+footer {
+    background-image: url('../images/Backgrounds/FooterB.png');
+    margin:0;
+    color:white;
+    padding-top:20px;
+    padding-bottom:20px;
+    border-top: 3px solid red;
+}
+
+.footer-wrap{
+   text-align:center;
+}
+
+nav{
+    height:50px;
+}
+
+.KingdomHearts {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+}
+
+#navibereich li {
+    display: inline;
+    list-style-type: none;
+}
+
+#navibereich {
+    background-color: black;
+    color:white;
+    padding: 10px;
+    display: block;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red; 
+}
+
+#navibereich a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+
+#navibereich a:hover {
+    background-color: white;
+    color: black;
+}
+
+#navi02 {
+    padding-left: 50px;
+ 
+}
+
+#navi03 {
+    padding-left: 50px;
+}
+
+#navi04 {
+    padding-left: 50px;
+}
+
+#navi98{
+    margin-left:10px;
+}
+
+
+.dropdown {
+    position:relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 150px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    border: 3px solid red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.Erstellen{
+    border: 3px double red;
+}
