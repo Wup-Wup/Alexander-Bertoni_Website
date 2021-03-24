@@ -1,25 +1,25 @@
 ﻿@model WebProjekt_Beispiel.Models.User
-@{
-    ViewData["Title"] = "LogIn";
-}
-    <div class="logins">
-        <h1>Log into your Account</h1>
+@{ ViewData["Title"] = "LogIn"; }
 
-        <form asp-controller="user" asp-action="LogIn" method="post">
-            <label asp-for="Email"><b>Email:</b></label> <br />
-            <input asp-for="Email" placeholder="Enter Email" required /><br /> <br />
+<link href="~/css/User/LogIn.css" rel="stylesheet" type="text/css" />
 
-            <label asp-for="Password"><b>Passwort:</b></label> <br />
-            <input asp-for="Password" placeholder="Enter Password" id="pwd" name="pwd" required /> <br /> <br />
+<div class="logins">
+    <h1>Log into your Account</h1>
 
-            <label>
-                <input asp-for="Remember" type="checkbox" style="margin-bottom:15px"> Remember me
-            </label>
-            <br />
+    <form asp-controller="user" asp-action="LogIn" method="post">
+        <label asp-for="Email"><b>Email:</b></label> <br />
+        <input asp-for="Email" placeholder="Enter Email" required type="email" /><br /> <br />
 
-            <button class="CancelButton" type="reset">Cancel</button>
-            <button class="SignUpButton" type="submit">Log in</button>
+        <label asp-for="Password"><b>Password:</b></label> <br />
+        <input asp-for="Password" placeholder="Enter Password" id="pwd" name="pwd" required type="password" /> <br /> <br />
 
-        </form>
-    </div>
-    
+        <label>
+            <input asp-for="Remember" type="checkbox" style="margin-bottom:15px"> Remember me
+        </label>
+        <br />
+
+        <button class="CancelButton" type="reset">Cancel</button>
+        <button class="SignUpButton" type="submit">Log in</button>
+
+    </form>
+</div>

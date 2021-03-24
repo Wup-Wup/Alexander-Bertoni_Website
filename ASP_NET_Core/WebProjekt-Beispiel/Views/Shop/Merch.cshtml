@@ -4,6 +4,9 @@
     ViewData["Title"] = "Merch";
 }
 
+<link href="~/css/Shop/Merch.css" rel="stylesheet" type="text/css" />
+
+
 @if ((Model == null) || (Model.Count == 0))
 {
     <p>
@@ -40,11 +43,6 @@ else
                     <td>
                         <form action="/shop/delete/@a.ArticleId" method="post">
                             <input type="submit" value="delete" />
-                        </form>
-                    </td>
-                    <td>
-                        <form action="/shop/update/@a.ArticleId" method="post">
-                            <input type="submit" value="change" />
                         </form>
                     </td>
                 </tr>

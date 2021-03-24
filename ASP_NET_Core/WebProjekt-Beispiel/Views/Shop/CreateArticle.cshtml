@@ -3,31 +3,33 @@
     ViewData["Title"] = "CreateArticle";
 }
 
+<link href="~/css/Shop/CreateArticle.css" rel="stylesheet" type="text/css" />
+
 <div class="logab">
 
     <h1>Create an Article</h1>
 
-    <form asp-controller="shop" asp-action="CreateArticle" method="post">
+    <form asp-controller="shop" asp-action="CreateArticle" method="post" class="formul">
 
         <label asp-for="ArticleName">Articlename:</label> <br />
-        <input asp-for="ArticleName" /> <br />
+        <input asp-for="ArticleName" required/> <br />
         <span asp-validation-for="ArticleName" class="test-danger" style="font-size: 85%"></span>
         <br />
 
 
         <label asp-for="ArticlePrice">Price:</label> <br />
-        <input asp-for="ArticlePrice" /> <br />
+        <input asp-for="ArticlePrice" required/> <br />
         <span asp-validation-for="ArticlePrice" class="text-danger" style="font-size: 85%"></span>
         <br />
 
-        <label asp-for="ReleaseDate">Erscheinungsdatum</label><br />
+        <label asp-for="ReleaseDate">Release Date:</label><br />
         <input asp-for="ReleaseDate" type="date" /> <br />
         <br />
 
 
-        <label asp-for="Category">Kategorie:</label><br />
+        <label asp-for="Category">Category:</label><br />
         <select asp-for="Category">
-            <option value="notSpecified">bitte auswählen</option>
+            <option value="notSpecified">--Select--</option>
             <option value="Figure">Figur</option>
             <option value="Statue">Statue</option>
             <option value="Plush">Plush</option>
@@ -36,11 +38,11 @@
         <br />
         <br />
         <label asp-for="Image">Image:</label> <br />
-        <input asp-for="Image" /> <br />
+        <input asp-for="Image"> <br />
         <span asp-validation-for="Image" class="test-danger" style="font-size: 85%"></span>
         <br />
         <br />
-        <input type="submit" value="Artikel erzeugen" />
-        <input type="reset" value="Abbrechen" />
+        <input type="submit" value="Create Article" />
+        <input type="reset" value="Cancel" />
     </form>
 </div>

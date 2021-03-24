@@ -5,29 +5,31 @@
 @{
 }
 
+<link href="~/css/User/SignUp.css" rel="stylesheet" type="text/css" />
+
 <div class="logins">
 
     <h1>Create an Account</h1>
 
     <form asp-controller="user"asp-action="SignUp" method="post">
-        <label asp-for="Firstname"><b>Vorname:</b></label> <br />
-        <input asp-for="Firstname" /> <br />
+        <label asp-for="Firstname"><b>Firstname:</b></label> <br />
+        <input asp-for="Firstname"required /> <br />
         <br />
 
-        <label asp-for="Lastname"><b>Nachname:</b></label><br />
-        <input asp-for="Lastname" /> <br />
+        <label asp-for="Lastname"><b>Lastname:</b></label><br />
+        <input asp-for="Lastname" required/> <br />
         <br />
 
         <label asp-for="Email"><b>Email:</b></label> <br />
-        <input asp-for="Email" /> <br />
+        <input asp-for="Email" type="email" required/> <br />
         <br />
 
-        <label asp-for="Password"><b>Passwort:</b></label> <br />
-        <input asp-for="Password" type="password"/> <br />
+        <label asp-for="Password"><b>Password:</b></label> <br />
+        <input asp-for="Password" type="password" required/> <br />
         <br />
 
         <label asp-for="PasswordConfirm"><b>Repeat Password:</b></label> <br />
-        <input asp-for="PasswordConfirm" type="password" /> <br />
+        <input asp-for="PasswordConfirm" type="password" required/> <br />
         <br />
 
         <label>
